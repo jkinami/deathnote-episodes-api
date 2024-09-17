@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :episodes, only: [ :index]
